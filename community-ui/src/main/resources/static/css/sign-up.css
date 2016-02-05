@@ -1,0 +1,107 @@
+.sign-up .title {
+    height: 100px;
+    background-image: url('../img/icon/User.png');
+    background-size: 100px 100px;
+}
+
+.sign-up > .title > .main-title {
+    padding-left: 120px;
+}
+.sign-up-form {
+    margin-bottom: 20px;
+}
+.sign-up .form-group{
+    margin-bottom: 20px;
+}
+.sign-up .form-group label{
+    font-size: 16px;
+}
+
+/*.sign-up .agree{*/
+    /*padding: 15px 0px;*/
+/*}*/
+/*.sign-up .agree.privacy > *{*/
+    /*margin-right: 15px;*/
+/*}*/
+/*.sign-up .agree.license > *{*/
+    /*margin-left: 15px;*/
+/*}*/
+/*.sign-up .agree .panel-title{*/
+    /*font-weight: bolder;*/
+/*}*/
+/*.sign-up .agree .panel-body {*/
+    /*width: 100%;*/
+    /*padding: 10px 15px;*/
+/*}*/
+/*.sign-up .agree .panel-body,*/
+/*.sign-up .agree .panel-body > *{*/
+    /*display: inline-block;*/
+/*}*/
+/*.sign-up .agree .panel-body a {*/
+    /*cursor: hand;*/
+/*}*/
+/*.sign-up .agree .panel-body > div{*/
+    /*float: right;*/
+    /*margin: 0;*/
+/*}*/
+
+.sign-up .agree:before,
+.sign-up .agree:after{
+    content: " ";
+    display: table;
+}
+.sign-up .agree:after{
+    clear: both;
+}
+.sign-up .agree > * {
+    padding: 0 15px;
+}
+.sign-up .agree > :first-child {
+    padding-left:0;
+}
+.sign-up .agree > :last-child {
+    padding-right:0;
+}
+.sign-up .agree > .form-group{
+    width: 50%;
+    position: relative;
+    float: left;
+}
+.sign-up .agree > .form-group .form-control:before,
+.sign-up .agree > .form-group .form-control:after{
+    content: " ";
+    display: table;
+}
+.sign-up .agree > .form-group .form-control:after{
+    clear: both;
+}
+.sign-up .agree > .form-group .form-control > *{
+    display: inline-block;
+}
+.sign-up .agree > .form-group .form-control .checkbox{
+    margin: 0;
+    float: right;
+}
+.sign-up .agree > .form-group .form-control .checkbox label{
+    font-size: 14px;
+    padding-left: 0;
+}
+@media(max-width:767px){
+    /*.sign-up .agree{*/
+    /*padding: 0px;*/
+    /*}*/
+    /*.sign-up .agree.privacy > *{*/
+    /*margin-right: 0px;*/
+    /*}*/
+
+    /*.sign-up .agree.license > *{*/
+    /*margin-left: 0px;*/
+    /*}*/
+
+    .sign-up .agree > .form-group{
+        width: 100%;
+    }
+    .sign-up .agree > * {
+        padding: 0 0;
+    }
+}

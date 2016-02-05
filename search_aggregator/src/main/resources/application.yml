@@ -1,0 +1,64 @@
+---
+server:
+  port: 9000
+spring:
+  redis:
+    host: 70.50.168.68
+    password: anyframe
+    port: 6379
+solr:
+  url: https://solr.ssc.com
+  path: /solr/ssc/select
+  id: solr
+  pw: 89r&12s_!4
+  options:
+    fl: url,id,title,content_type
+    df: content_kr
+    wt: json
+    indent: true
+    hl: true
+    hl.fl: content_kr
+    hl.simple.pre: <em>
+    hl.simple.post: </em>
+    hl.usePhraseHighlighter: true
+    hl.highlightMultiTerm: true
+    hl.maxAnalyzedChars: -1
+    hl.fragsize: 300
+forum:
+  url: https://forum.ssc.com
+  path: /api/get_search_results
+blog:
+  url: https://blog.ssc.com
+  path: /api/get_search_results
+#logging:
+#  level:
+#    ROOT: DEBUG
+
+## EurekaConfig
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+  instance:
+    statusPageUrlPath: ${management.contextPath}/info
+    healthCheckUrlPath: ${management.contextPath}/health
+    healthCheckPath: ${management.contextPath}/healthCheck
+    metadataMap:
+      instanceId: ${spring.application.name}:${spring.application.instance_id:${server.port}}
+...
+---
+spring:
+  profiles: staging
+  
+solr:
+  url: http://localhost:8983
+  path: /solr/ssc/select
+  
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: https://eureka.ssc.com/eureka/
+  instance:
+    hostname: search.ssc.com
+    secure-port: 443
+    secure-port-enabled: true

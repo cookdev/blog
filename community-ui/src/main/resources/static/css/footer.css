@@ -1,0 +1,200 @@
+/* footer-sitemap */
+
+.footer {
+    position: relative;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    padding: 0 0 0 0;
+    min-height: 166px;
+    background: #323e4e;
+    /*background: #3c3d3d;*/
+    color: #a2a3a4;
+}
+.footer a,
+.footer span{
+    color: #fff;
+}
+.footer a:hover {
+    color: #a2a3a4;
+    text-decoration: none;
+}
+.footer ul {
+    padding: 0;
+}
+.footer ul li {
+    margin-bottom: 5px;
+}
+.footer .nav-list-inline li {
+    display: inline;
+}
+.footer .nav-list-inline li:after {
+    display: inline-block;
+    margin-left: 13.86px;
+    width: 1px;
+    height: 1.1em;
+    background-color: #a6a4a0;
+    vertical-align: middle;
+    content: '';
+}
+.footer .nav-list-inline li:last-child:after {
+    display: none;
+}
+.footer .nav-list-inline li:after {
+    margin-left: 6.86px;
+}
+.footer .nav-list-inline li +li {
+    margin-left: 2px;
+}
+
+.footer .footer-sitemap .content{
+    margin-top: 35px;
+}
+
+.footer .footer-copyright {
+    padding: 0px 0 0 0;
+    min-height: 35px;
+    background: #FFF;
+}
+.footer .footer-copyright a {
+    color: #363b8f;
+}
+.footer .footer-copyright a:hover {
+    color: #a2a3a4;
+    text-decoration: none;
+}
+.footer .footer-copyright ul {
+    margin: 0px;
+}
+.footer .footer-copyright ul li {
+    margin-top: 4px;
+}
+/*.footer.real .nav-list-inline li {*/
+    /*display: inline-block;*/
+/*}*/
+.footer .footer-copyright .text{
+    margin: 10px 0;
+}
+.footer .footer-copyright .logo ul li{
+    float: right;
+}
+.footer .footer-copyright p {
+    margin: 0px;
+}
+
+/* FooterView Sitemap*/
+.footer-sitemap {
+    margin-bottom: 22px;
+}
+.footer-sitemap h3 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: rgba(255,255,255,.7);
+    font: 400 20px/20px "Open Sans", Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    text-shadow: none;
+}
+
+/* FooterView Subscription */
+.footer-sitemap .subscription {
+    height: 31px;
+}
+.footer-sitemap .subscription form {
+    position: relative;
+    margin-bottom: 16px;
+}
+.footer-sitemap .subscription input.email {
+    float: left;
+    margin: 0;
+    padding: 4px 4px 4px 8px;
+    height: 35px;
+    width: 150px;
+    font-size: 14px;
+    background: #4c4c4e;
+    border: solid 1px #6f6f70;
+    border-radius: 2px;
+    color: #bcbcbc;
+    box-shadow: inset 2px 2px 2px rgba(0, 0, 0, .1);
+}
+.footer-sitemap .subscription .submit {
+    position: relative;
+    margin: 0 0 0 -1px;
+    padding: 0;
+    width: 34px;
+    height: 35px;
+    background: #707071;
+    border: 1px solid #767677;
+    border-right: 0;
+    border-radius: 0 2px 2px 0;
+    cursor: pointer;
+    /*text-indent: -50000px;*/
+    -webkit-transition: background-color .4s;
+    transition: background-color .4s;
+    transition-property: background-color;
+    transition-duration: 0.4s;
+    transition-timing-function: initial;
+    transition-delay: initial;
+    color: #ffffff;
+}
+.footer-sitemap .subscription .submit:hover {
+    background-color: #a2a3a4;
+}
+
+/** Fotter Contacts */
+
+/** FooterView Social */
+.footer-sitemap ul.social {
+    margin: 0px 0 5px;
+    /* font-size: 1px; */
+    /* text-align: justify; */
+}
+.footer-sitemap ul.social li {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    background: none;
+}
+.footer-sitemap ul.social li.empty {
+    display: none;
+}
+.footer-sitemap ul.social:after {
+    display: inline-block;
+    width: 100%;
+    height: 0;
+    content: '';
+}
+.footer-sitemap ul.social li a {
+    position: relative;
+    display: block;
+    margin: 0;
+    width: 36px;
+    height: 36px;
+    text-indent: -50000px;
+    background: transparent;
+    border-radius: 2px;
+}
+.footer-sitemap ul.social li a:before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    background: url("../img/spriteSocial.svg") no-repeat 0 -100px;
+    content: '';
+}
+.footer-sitemap ul.social li.facebook a:before { width: 10px; height: 20px; background-position: 0 -100px; }
+.footer-sitemap ul.social li.youtube a:before  { width: 10px; height: 10px; background-position: -50px -100px }
+.footer-sitemap ul.social li.linked-in a:before       { width: 16px; height: 17px; background-position: -100px -100px }
+.footer-sitemap ul.social li.twitter a:before  { width: 20px; height: 16px; background-position: -150px -100px }
+.footer-sitemap ul.social li.google-plus a:before    { width: 21px; height: 20px; background-position: -200px -100px }
+.footer-sitemap ul.social li.anyframe-rss a:before      { width: 16px; height: 16px; background-position: -250px -100px }
+.footer-sitemap ul.social li.weibo a:before    { width: 24px; height: 19px; background-position: -400px -100px }
+
+.footer-sitemap ul.social li.facebook a:hover  { background-color: #416baf}
+.footer-sitemap ul.social li.youtube a:hover   { background-color: #d42323 }
+.footer-sitemap ul.social li.linked-in a:hover        { background-color: #2a83c6 }
+.footer-sitemap ul.social li.twitter a:hover   { background-color: #28aae1 }
+.footer-sitemap ul.social li.google-plus a:hover     { background-color: #df4a32 }
+.footer-sitemap ul.social li.anyframe-rss a:hover       { background-color: #ffa900 }
+.footer-sitemap ul.social li.weibo a:hover     { background-color: #e6152c }

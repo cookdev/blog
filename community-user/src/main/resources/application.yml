@@ -1,0 +1,59 @@
+server:
+  port: 30002
+
+logging:
+  level:
+    org.springframework.security: DEBUG
+
+security:
+  sessions: NEVER
+
+spring:
+  datasource:
+    url: jdbc:postgresql://70.50.169.218:5432/anyframe?currentSchema=user
+    username: anyframe
+    password: anyframe
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    database: POSTGRESQL
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        format_sql: true
+  redis:
+    host: 70.50.169.219
+    password: anyframe
+    port: 6379
+
+#logging:
+#  level:
+#    ROOT: DEBUG
+
+community:
+  security:
+    registerUrl: http://localhost:8080/security/register
+    passwordResetUrl: http://localhost:8080/security/password
+    userUrl: http://localhost:8080/security/user
+
+---
+spring:
+  profiles: staging
+community:
+  security:
+    registerUrl: http://localhost:9001/security/register
+    passwordResetUrl: http://localhost:9001/security/password
+    userUrl: http://localhost:9001/security/user
+
+## EurekaConfig
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+  instance:
+    statusPageUrlPath: ${management.contextPath}/info
+    healthCheckUrlPath: ${management.contextPath}/health
+    healthCheckPath: ${management.contextPath}/healthCheck
+    metadataMap:
+      instanceId: ${spring.application.name}:${spring.application.instance_id:${server.port}}

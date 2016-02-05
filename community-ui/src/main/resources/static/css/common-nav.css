@@ -1,0 +1,187 @@
+/**
+* 공통 네비게이터 대한 CSS 정의
+*/
+/********************/
+/* Common Navigator */
+/********************/
+header.common-header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    height: 35px;
+    min-height: 35px;
+}
+
+.common-navbar {
+    position: relative;
+    min-height: 35px;
+    height: 35px;
+    background-color: #FFF;
+    /*background-color: #323e4e;*/
+    /*background-color: #3c3d3d;*/
+    border-width: 0 0 0 0;
+    margin-bottom: 0px;
+}
+.common-navbar .navbar-header .navbar-sub-system{
+    margin: 0;
+    float: left;
+    padding: 0 15px;
+}
+
+.common-navbar #navbar-collapse {
+    height: 35px!important;
+}
+
+.anyframe-small-logo:hover,
+.anyframe-small-logo:focus {
+    text-decoration: none !important;
+    background-color: transparent !important;
+}
+@media (max-width: 767px) {
+    .navbar-nav .open .dropdown-menu {
+        position: absolute;
+        background-color: inherit;
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+    }
+}
+.common-navbar .navbar-header .navbar-sub-system > li > a {
+    padding: 10px 15px 10px 159px;
+    background-repeat: no-repeat;
+}
+
+.common-navbar .navbar-menu {
+    background-color: white;
+}
+.common-navbar .navbar-menu.collapse.in{
+    box-shadow: rgba(0, 0, 0, 0.172549) 0px 6px 12px;
+}
+.common-navbar .navbar-menu .navbar-nav > li > a {
+    line-height: 15px;
+    font-size: 12px;
+    color: #323e4e;
+    position: relative;
+    display: block;
+    padding: 10px 15px;
+}
+.common-navbar .navbar-menu .navbar-nav > li > a:hover,
+.common-navbar .navbar-menu .navbar-nav > li > a:focus {
+    text-decoration: none;
+    color: #a2a3a4;
+}
+.common-navbar .navbar-menu .navbar-nav > .active > a,
+.common-navbar .navbar-menu .navbar-nav > .active > a:hover,
+.common-navbar .navbar-menu .navbar-nav > .active > a:focus {
+    color: #FFFFFF;
+    text-decoration: none;
+
+}
+/* Dropdown */
+.common-navbar .dropdown{
+    /*padding-left: 10px;*/
+}
+.common-navbar .dropdown.open{
+    background-color: #fff;
+}
+.common-navbar .dropdown-menu{
+    border-top: 0px;
+    background-color: #fff;
+    border: none;
+    width: 100%;
+}
+
+/* 우측메뉴 */
+/*.common-navbar:before,*/
+/*.common-navbar .navbar-menu .navbar-nav.navbar-right:before {*/
+    /*content: " ";*/
+    /*display: table;*/
+/*}*/
+/*.common-navbar:after,*/
+/*.common-navbar .navbar-menu .navbar-nav.navbar-right:after {*/
+    /*content: " ";*/
+    /*display: table;*/
+    /*clear: both;*/
+/*}*/
+
+/*.hide-with-animation{*/
+    /*padding-left:0px !important;*/
+    /*width: 0px !important;*/
+    /*border: 0 !important;*/
+    /*box-shadow: none !important;*/
+    /*/!*background-color: #3c3d3d;*!/*/
+/*}*/
+
+/*.show-converstion{*/
+    /*color: #FFF;*/
+/*}*/
+
+/*.show-converstion:hover,*/
+/*.show-converstion:focus,*/
+/*.show-converstion.focus{*/
+    /*color: #a2a3a4;*/
+/*}*/
+/*************************************/
+/* 공통헤더 Navbar Bootstrap override */
+/*************************************/
+.navbar-form{
+    position: static;
+    /*position: absolute;*/
+    padding: 5px 15px;
+    /*padding-top: 0;*/
+    /*padding-bottom: 0;*/
+    margin: 0;
+    /*margin: 5px 0px 5px 0px;*/
+    right: 0;
+    border: 0;
+}
+
+.navbar-form input.form-control{
+    vertical-align: middle;
+    display: inline-block;
+    opacity: 1;
+    /*width: 211px;*/
+    width: 100%;
+    float: left;
+    height: 25px;
+    padding: 0px 24px 0px 12px;
+    -webkit-transition: width .5s ease-out, border .1s ease-out, box-shadow .1s, background-color .5s ease-out;
+}
+
+.navbar-form button{
+    font-size: 12px;
+    line-height: 15px;
+    position: static;
+    margin: 0px 0px 0px -30px;
+    /*position: absolute;*/
+    top: 0;
+    bottom: 0;
+    right: 0;
+    height: 25px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    color: #3c3d3d;
+    padding: 0px 6px 0px 6px;
+}
+.navbar-form .btn:hover,
+.navbar-form .btn:focus,
+.navbar-form .btn.focus {
+    color: #a2a3a4;
+    text-decoration: none;
+}
+.navbar-form .btn:active,
+.navbar-form .btn.active {
+    outline: 0;
+    background-image: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.common-navbar .navbar-toggle .icon-bar{
+    background-color: #888;
+}
+
+.common-navbar .navbar-toggle{
+    margin-top: 0px;
+    margin-bottom: 0px;
+}

@@ -1,0 +1,104 @@
+logging:
+  level:
+    org.springframework.security: DEBUG
+    org.springframework.web: DEBUG
+
+security:
+  user:
+    password: password
+  sessions: ALWAYS
+
+zuul:
+  routes:
+#   Microservice Routes
+    search:
+      path: /search/**
+      #url: http://localhost:9000
+      serviceId: search-aggreator
+      stripPrefix: false
+    notice:
+      path: /notice/**
+      #url: http://localhost:30001
+      serviceId: community-notice
+      stripPrefix: true
+    user:
+      path: /user/**
+      #url: http://localhost:30002
+      serviceId: community-user
+      stripPrefix: false
+
+#   UI Routes
+    ui-root1:
+      path: /
+      serviceId: community-ui
+      #url: http://localhost:8081
+    ui-root2:
+      path: /*.{js,html,css}
+      serviceId: community-ui
+      #url: http://localhost:8081
+    ui-depth1:
+      path: /**/*.{js,html}
+      serviceId: community-ui
+      #url: http://localhost:8081
+
+hystrix:
+  command:
+    default:
+      execution:
+        timeout:
+          enabled: false
+        isolation:
+          thread:
+            timeoutInMilliseconds: 60000
+
+spring:
+  redis:
+    host: 70.50.168.68
+    password: anyframe
+    port: 6379
+  datasource:
+    url: jdbc:postgresql://70.50.168.67:5432/anyframe?currentSchema=community-auth
+    username: anyframe
+    password: anyframe
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    database: POSTGRESQL
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        format_sql: true
+        
+anyframe:
+  forum:
+    url: https://forum.ssc.com
+    path: /api/user/generate_auth_cookie
+    params: username,password
+  blog:
+    url: https://blog.ssc.com
+    path: /api/user/generate_auth_cookie
+    params: username,password
+  logouturl: http://localhost:8080
+
+#eureka:
+#  instance:
+#    hostname: localhost  
+    
+---
+spring:
+  profiles: staging
+anyframe:
+  logouturl: https://www.ssc.com
+## EurekaConfig
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: https://eureka.ssc.com/eureka/
+  instance:
+    hostname: localhost
+    statusPageUrlPath: ${management.contextPath}/info
+    healthCheckUrlPath: ${management.contextPath}/health
+    healthCheckPath: ${management.contextPath}/healthCheck
+    metadataMap:
+      instanceId: ${spring.application.name}:${spring.application.instance_id:${server.port}}  

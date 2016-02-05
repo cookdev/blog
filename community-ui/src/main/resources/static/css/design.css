@@ -1,0 +1,246 @@
+/* Browser Default CSS Event Disable */
+:focus {
+    outline: none;
+}
+body {
+    padding-top: 35px;
+}
+
+body, h1, h2, h3, h4, h5, h6, li, a, p {
+    font-family: "Nanum Gothic" !important;
+}
+
+body, h1, h2, h3, h4, h5, h6, li, p {
+    color: #34302d;
+}
+
+a:hover, a:focus {
+    text-decoration: none;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+main {
+    position: static;
+    width: 100%;
+}
+.btn:focus,
+.btn:active:focus,
+.btn.active:focus,
+.btn.focus,
+.btn:active.focus,
+.btn.active.focus {
+    outline: none;
+    outline-offset: 0px;
+    /* border-radius: 6px; */
+}
+
+span.indent-1{
+    padding-left: 10px;
+    display: block;
+}
+
+span.indent-2{
+    padding-left: 20px;
+    display: block;
+}
+.masthead {
+    background-color: #fff;
+    /*background-color: #5F9EA0;*/
+    /*background-color: #337ab7;*/
+    /*background-color: #FFFFFF;*/
+    /*background-color: #FFF6E5;*/
+    height: auto;
+    max-height: 368px;
+    min-height: 112px
+    /*border-bottom: solid 2px #bdbbbc;*/
+}
+
+.masthead .container {
+    /*max-width: 1170px;*/
+}
+
+.anyframe-contents {
+    background-color: #fff;
+}
+
+.anyframe-sample {
+    background-color: #f2f1f2;
+    border-bottom: solid 2px #bdbbbc;
+}
+.anyframe-sample2 {
+    background-color: #edf3f7;
+    border-bottom: solid 2px #bdbbbc;
+}
+
+.anyframe-simple-overview {
+    background-color: #F7F0EA;
+    border-bottom: solid 2px #bdbbbc;
+}
+
+.carousel-inner{
+    text-align: center;
+}
+.img-container{
+    display: table;
+    margin: 0 auto;
+}
+.center-image{
+    display: block;
+    /*margin: 0 auto;*/
+    -webkit-transition: width .5s ease-out;
+}
+
+/* Main Container 공통 */
+.main-container-wrapper{
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+@media (max-width: 767px) {
+    .main-container-wrapper{
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+}
+
+.main-container-wrapper > .title{
+    margin: 0px 0 30px 0px;
+    display: table;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+.main-container-wrapper > .title > .main-title {
+    font-weight: bold;
+    margin-top: 0px;
+    border-bottom-width: 0px;
+    margin-bottom: 0px;
+    vertical-align: middle;
+    display: table-cell;
+}
+.main-container-wrapper > .description {
+    margin: 0px 0 60px;
+}
+.main-container-wrapper > .description > p {
+    text-indent: 24px;
+    font-size: 16px;
+    line-height: 24px;
+}
+.main-container-wrapper .main-content{
+    margin-bottom: 50px;
+}
+
+/* Logo */
+.anyframe-logo {
+    height: 53px;
+    width: 304px;
+    background-image: url('../img/logo_sub.jpg');
+}
+.anyframe-small-logo {
+    height: 27px;
+    width: 159px;
+    background-image: url('../img/logo_original_159x27.png');
+    margin: 4px 0;
+}
+
+.project-overview .icon-logo {
+    font-size: 100px;
+    vertical-align: middle;
+    margin-right: 20px;
+    display: inline-block;
+    height: 100px;
+}
+
+
+
+/* Modal */
+/* 개인정보취급방침 팝업 */
+
+@media (min-width: 1140px) {
+    .modal-dialog.privacy {
+        width: 1140px !important;
+        margin: 30px auto !important;
+    }
+}
+.modal-dialog.privacy {
+    position: relative;
+    width: auto;
+    margin: 10px 10px 10px 10px;
+}
+
+.privacy .modal-body {
+    height: 100%;
+    overflow-y: scroll;
+}
+.modal-header {
+    background-color: #337ab7;
+}
+.modal-header h4 {
+    margin: 0 0;
+    color: #fff;
+}
+.modal-header .close {
+    color: #fff;
+    opacity: 1;
+}
+
+.modal-content {
+    border: none;
+}
+
+.modal-footer {
+    padding: 10px 15px;
+}
+
+/*.svg-test:before {*/
+    /*background: url("../img/icon/logoproject_00.svg") no-repeat 0 -100px;*/
+    /*content: '';*/
+/*}*/
+/*.footer-sitemap ul.social li.facebook a:before { width: 10px; height: 20px; background-position: 0 -100px; }*/
+
+
+
+/* Carousel */
+.carousel-control {
+    margin: 0px 0px;
+    width: 30px;
+    color: inherit;
+}
+.carousel-inner {
+    margin: 0 auto;
+}
+.carousel-control.left,
+.carousel-control.right {
+    background: none no-repeat;
+}
+.item {
+    height: auto;
+    max-width: 960px;
+    padding: 0 0;
+}
+.collapsing {
+    -webkit-transition-duration: 0.1s;
+    -o-transition-duration: 0.1s;
+    transition-duration: 0.1s;
+}
+
+/* Button */
+.btn-group{
+    float: right;
+}
+/* Checkbox */
+/*.checkbox-wrapper .error {*/
+    /*border-color: #a94442;*/
+    /*-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);*/
+    /*box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);*/
+/*}*/
+/*.checkbox-wrapper .panel {*/
+    /*margin: 0px;*/
+/*}*/
+/*.checkbox-wrapper .error-block {*/
+    /*color: #a94442;*/
+    /*display: block;*/
+    /*margin-top: 5px;*/
+    /*margin-bottom: 10px;*/
+/*}*/

@@ -1,0 +1,73 @@
+<nav class="portal-navbar" role="banner">
+    <div class="navbar-header container-fluid">
+        <h1 class="site-title">
+            <a href="/" rel="home">Anyframe Community</a>
+        </h1>
+    </div>
+    <div class="navbar-menu">
+        <div class="container">
+            <ul class="navbar-nav">
+                <li class="dropdown">
+                    <a id="dLabel" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">프로젝트 <span class="caret"></span></a>
+                    <ul class="dropdown-menu" aria-labelledby="dLabel">
+                        <li><a href="#project">Overview</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#project/core">Core</a></li>
+                        <li><a href="#project/code-generator">Code Generator</a></li>
+                        <li><a href="#project/query-manager">Query Manager</a></li>
+                        <li><a href="#project/oden">ODEN</a></li>
+                        <li><a href="#project/log-manager">Log Manager</a></li>
+                        <li><a href="#project/batch">Batch</a></li>
+                        <li><a href="#project/iam">IAM</a></li>
+                        <li><a href="#project/monitoring">Monitoring</a></li>
+                    </ul>
+                </li>
+                <li><a href="#notice">공지사항</a></li>
+                <li><a href="#education-schedule">교육일정</a></li>
+                <li><a href="https://forum.ssc.com">Forum</a></li>
+                <li><a href="https://blog.ssc.com">Blog</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<script>
+    var fix_class = 'is-fixed';
+
+    function stickyScroll(e) {
+        var scrollLength = $('.portal-navbar').height() - $('.portal-navbar .navbar-menu').height();
+        var menu = $('.portal-navbar .navbar-menu');
+        if( $(this).scrollTop() > scrollLength  && !menu.hasClass(fix_class)) {
+            menu.addClass(fix_class);
+        }
+
+        if( $(this).scrollTop() < scrollLength ) {
+            menu.removeClass(fix_class);
+        }
+    }
+
+    // Scroll handler to toggle classes.
+    $(window).on('scroll', stickyScroll);
+</script>
+        <!--<nav class="navbar navbar-default navbar-static-top site-header">-->
+    <!--<div class="container">-->
+        <!--<div class="navbar-header">-->
+            <!--<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">-->
+                <!--<span class="sr-only">Toggle navigation</span>-->
+                <!--<span class="icon-bar"></span>-->
+                <!--<span class="icon-bar"></span>-->
+                <!--<span class="icon-bar"></span>-->
+            <!--</button>-->
+            <!--<a class="navbar-brand" href="#">-->
+                <!--<div class="anyframe-log"></div>-->
+            <!--</a>-->
+        <!--</div>-->
+        <!--&lt;!&ndash; Collect the nav links, forms, and other content for toggling &ndash;&gt;-->
+        <!--<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">-->
+            <!--<ul class="nav navbar-nav">-->
+                <!--<li><a href="#">프로젝트</a></li>-->
+                <!--<li><a href="#">공지사항</a></li>-->
+                <!--<li><a href="#">교육일정</a></li>-->
+            <!--</ul>-->
+        <!--</div>&lt;!&ndash; /.navbar-collapse &ndash;&gt;-->
+    <!--</div>&lt;!&ndash; /.container-fluid &ndash;&gt;-->
+<!--</nav>-->

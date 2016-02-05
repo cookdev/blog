@@ -1,0 +1,26 @@
+.login .title {
+    height: 100px;
+    background-image: url('../img/icon/User.png');
+    background-size: 100px 100px;
+}
+
+.login > .title > .main-title {
+    padding-left: 120px;
+}
+.login .main-content{
+    max-width: 500px;
+    margin: auto;
+}
+
+.login-form {
+    margin-bottom: 30px;
+}
+
+
+.modal .login .container{
+    width: 500px;
+}
+.modal .main-container-wrapper {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}

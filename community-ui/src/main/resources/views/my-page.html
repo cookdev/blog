@@ -1,0 +1,48 @@
+<article class="my-page main-container-wrapper">
+    <div class="title">
+        <H1 class="main-title">My Information</H1>
+    </div>
+
+    <div class="container main-contents">
+        <section class="main-content">
+            <div class="btn-group btn-group-sm" role="group">
+                <button type="button" id="btnUserModify" class="btn btn-info">회원정보수정</button>
+                <button type="button" id="btnPasswordModify" class="btn btn-warning">비밀번호변경</button>
+                <button type="button" id="btnUserDelete" class="btn btn-danger">탈퇴</button>
+            </div>
+            <form class="my-page-form">
+                <fieldset disabled>
+                    <div class="form-group">
+                        <label for="userId">ID</label>
+                        <input type="text" class="form-control" data-validate-type="text" id="userId" name="userId" placeholder="로그인을 위한 ID를 입력하세요" disabled="true">
+                        <span class="help-block hidden"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="userName">이름</label>
+                        <input type="text" class="form-control" data-validate-type="text" id="userName"  name="userName" placeholder="Anyframe Community에서 사용할 이름을 입력하세요">
+                        <span class="help-block hidden"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">이메일</label>
+                        <input type="email" class="form-control" data-validate-type="text" id="email" name="email" placeholder="이메일 주소를 입력하세요">
+                        <span class="help-block hidden"></span>
+                    </div>
+                    <!--<div class="form-group hidden">-->
+                        <!--<label for="password">패스워드</label>-->
+                        <!--<input type="password" class="form-control" data-validate-type="text" id="password"  name="password" placeholder="10자리 이상의 패스워드를 입력하세요">-->
+                        <!--<span class="help-block hidden"></span>-->
+                    <!--</div>-->
+                    <!--<div class="form-group hidden">-->
+                        <!--<label for="repeatPassword">패스워드 확인</label>-->
+                        <!--<input type="password" class="form-control" data-validate-type="text" id="repeatPassword" name="repeatPassword" placeholder="동일한 패스워드를 입력하세요">-->
+                        <!--<span class="help-block hidden"></span>-->
+                    <!--</div>-->
+                </fieldset>
+            </form>
+            <div id="btnGroupMyInfo" class="btn-group btn-group-lg hidden" role="group">
+                <button type="button" id="okBtn" class="btn btn-primary">확인</button>
+                <button type="button" id="backBtn" class="btn btn-default">뒤로</button>
+            </div>
+        </section>
+    </div>
+</article>

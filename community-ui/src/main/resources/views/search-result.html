@@ -1,0 +1,43 @@
+<article class="search-result main-container-wrapper">
+    <div class="title">
+        <h1 class="main-title">
+            <span class="glyphicon glyphicon-search"/>검색 결과
+        </h1>
+    </div>
+    <div>
+        <form class="search-input-form form-inline" role="search" id="search-result-search-form">
+            <div class="form-group">
+                <input type="text" class="col-md-9 form-control input-lg" placeholder="Search" required="true"/>
+                <button type="button" class="btn btn-lg btn-primary search-btn col-md-1">검색</button>
+            </div>
+        </form>
+        <ul class="nav nav-tabs">
+            <!--<li role="presentation" class="active" id="total-presentation"><a href="#">전체</a></li>-->
+            <li role="presentation" class="active" id="anyframe-presentation"><a href="#">Anyframe</a></li>
+            <li role="presentation" id="blog-presentation"><a href="#">Blog</a></li>
+            <li role="presentation" id="forum-presentation"><a href="#">Forum</a></li>
+        </ul>
+        <!--<div id="total-tab" />-->
+        <div id="refresh-animate">
+            <span class="glyphicon glyphicon-refresh glyphicon-refresh-animate"></span>
+        </div>
+
+        <div id="anyframe-tab">
+            <div class="total-count"><h4></h4></div>
+            <ul class="search-result-items">
+            </ul>
+        </div>
+        <div id="blog-tab">
+            <div class="total-count"><h4></h4></div>
+            <ul class="search-result-items">
+            </ul>
+        </div>
+        <div id="forum-tab">
+            <div class="total-count"><h4></h4></div>
+            <ul class="search-result-items">
+            </ul>
+        </div>
+    </div>
+    <div class="paginator">
+    </div>
+</article>
